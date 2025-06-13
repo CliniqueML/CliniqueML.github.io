@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mon Entreprise</title>
+  <title>IHP L'Appart Mons</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -27,17 +27,17 @@
       height: 100%;
     }
     .header-left {
-      background: linear-gradient(135deg, #c3b091, #a9a9a9); /* beige foncé à gris moyen */
+      background: linear-gradient(135deg, #c3b091, #a9a9a9);
       justify-content: flex-start;
       padding-left: 1rem;
     }
     .header-center {
-      background: linear-gradient(135deg, #a9a9a9, #d9d3b5); /* gris moyen à crème foncée */
+      background: linear-gradient(135deg, #a9a9a9, #d9d3b5);
       flex-direction: column;
       text-align: center;
     }
     .header-right {
-      background: linear-gradient(135deg, #d9d3b5, #c3b091); /* crème foncée à beige foncé */
+      background: linear-gradient(135deg, #d9d3b5, #c3b091);
       flex-direction: column;
       justify-content: center;
       align-items: flex-end;
@@ -61,9 +61,25 @@
     }
     .container {
       padding: 2rem;
+      max-width: 900px;
+      margin: auto;
     }
     .section {
       margin-bottom: 2rem;
+      background: #fff;
+      padding: 1.5rem 2rem;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+    h2 {
+      border-bottom: 2px solid #c3b091;
+      padding-bottom: 0.3rem;
+      margin-bottom: 1rem;
+      color: #5a4a3c;
+    }
+    ul {
+      list-style-type: disc;
+      padding-left: 1.5rem;
     }
     footer {
       background-color: #222;
@@ -74,15 +90,21 @@
       width: 100%;
       bottom: 0;
     }
+    a {
+      color: #6b4e2f;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
   <header>
     <div class="header-left">
-      <img src="logo.png" alt="Logo" style="height: 70px; box-shadow: 2px 2px 8px rgba(0,0,0,0.3); border: 2px solid #ccc; border-radius: 4px;">
+      <img src="logo.png" alt="Logo IHP L'Appart" style="height: 70px; box-shadow: 2px 2px 8px rgba(0,0,0,0.3); border: 2px solid #ccc; border-radius: 4px;">
     </div>
     <div class="header-center">
-      <h1 style="margin: 0; text-shadow: 2px 2px 5px rgba(0,0,0,0.4);">IHP L'Appart </h1>
+      <h1 style="margin: 0; text-shadow: 2px 2px 5px rgba(0,0,0,0.4);">IHP L'Appart</h1>
       <p style="margin: 0; border: 2px solid #333; padding: 0.2rem 0.5rem; border-radius: 4px;">MONS</p>
     </div>
     <div class="header-right">
@@ -93,30 +115,45 @@
   </header>
 
   <nav>
+    <a href="#presentation">Présentation</a>
     <a href="#services">Services</a>
-    <a href="#a-propos">À propos</a>
+    <a href="#donnees-financieres">Données financières</a>
     <a href="#contact">Contact</a>
   </nav>
 
   <div class="container">
-    <div id="services" class="section">
-      <h2>Nos Services</h2>
-      <p>Nous offrons des prestations de qualité en conseil, développement web, et marketing digital.</p>
+    <div id="presentation" class="section">
+      <h2>Présentation</h2>
+      <p><strong>IHP L'Appart ASBL</strong> est une association à but non lucratif créée en 1993, située à Mons. Elle œuvre dans le secteur de la santé mentale en offrant un cadre résidentiel et un accompagnement psychosocial aux adultes avec troubles psychiatriques stabilisés.</p>
     </div>
 
-    <div id="a-propos" class="section">
-      <h2>À propos</h2>
-      <p>Notre équipe passionnée met son expertise au service de vos projets depuis plus de 10 ans.</p>
+    <div id="services" class="section">
+      <h2>Nos Services</h2>
+      <ul>
+        <li><strong>Atelier "La débrouille"</strong> : programme de réadaptation psychosociale pour internés libérés.</li>
+        <li><strong>Service ambulatoire SPAD Médias</strong> : soins psychiatriques à domicile dans la région Mons-Borinage.</li>
+      </ul>
+    </div>
+
+    <div id="donnees-financieres" class="section">
+      <h2>Données financières (2022)</h2>
+      <ul>
+        <li>Chiffre d'affaires : 1 255 629 €</li>
+        <li>Bénéfice net : 133 414 €</li>
+        <li>Capitaux propres : 983 089 €</li>
+      </ul>
     </div>
 
     <div id="contact" class="section">
       <h2>Contact</h2>
-      <p>Envoyez-nous un message à <a href="mailto:contact@monentreprise.be">contact@monentreprise.be</a>.</p>
+      <p><strong>Adresse :</strong> Boulevard Dolez 3, 7000 Mons</p>
+      <p><strong>Téléphone :</strong> 0478/51 66 97</p>
+      <p><strong>Email :</strong> <a href="mailto:tsi@ihpappart.be">tsi@ihpappart.be</a></p>
     </div>
 
     <div id="actualites" class="section">
       <h2>Actualités</h2>
-      <p>Restez informé de nos dernières nouveautés et événements à venir.</p>
+      <p>Restez informé des dernières nouveautés et événements à venir de l'association.</p>
     </div>
 
     <div id="liens-utiles" class="section">
@@ -126,7 +163,7 @@
   </div>
 
   <footer>
-    &copy; 2025 Mon Entreprise - Tous droits réservés
+    &copy; 2025 IHP L'Appart Mons - Tous droits réservés
   </footer>
 </body>
 </html>
