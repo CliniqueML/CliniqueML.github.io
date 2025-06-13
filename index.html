@@ -6,51 +6,24 @@
   <title>IHP L'Appart Mons</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Arial', sans-serif;
+      background-color: #F9F9F9;
+      color: #333;
       margin: 0;
       padding: 0;
-      background-color: #f4f4f4;
-      color: #333;
     }
     header {
-      background-color: #222;
+      background-color: #F7CACA;
       color: #fff;
-      display: flex;
-      align-items: stretch;
-      height: 120px;
-    }
-    .header-left, .header-center, .header-right {
-      flex: 1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100%;
-    }
-    .header-left {
-      background: linear-gradient(135deg, #c3b091, #a9a9a9);
-      justify-content: flex-start;
-      padding-left: 1rem;
-    }
-    .header-center {
-      background: linear-gradient(135deg, #a9a9a9, #d9d3b5);
-      flex-direction: column;
+      padding: 1rem;
       text-align: center;
     }
-    .header-right {
-      background: linear-gradient(135deg, #d9d3b5, #c3b091);
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-end;
-      padding-right: 1rem;
-    }
-    .header-right a {
-      color: #000;
-      text-decoration: none;
-      margin: 0.3rem 0;
-      font-weight: bold;
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
     }
     nav {
-      background-color: #444;
+      background-color: #A8C3BC;
       padding: 0.5rem;
       text-align: center;
     }
@@ -58,112 +31,112 @@
       color: #fff;
       margin: 0 1rem;
       text-decoration: none;
+      font-weight: bold;
     }
     .container {
-      padding: 2rem;
       max-width: 900px;
-      margin: auto;
+      margin: 2rem auto;
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     }
     .section {
       margin-bottom: 2rem;
-      background: #fff;
-      padding: 1.5rem 2rem;
-      border-radius: 8px;
-      box-shadow: 0 0 8px rgba(0,0,0,0.1);
     }
-    h2 {
-      border-bottom: 2px solid #c3b091;
-      padding-bottom: 0.3rem;
-      margin-bottom: 1rem;
-      color: #5a4a3c;
-    }
-    ul {
-      list-style-type: disc;
-      padding-left: 1.5rem;
+    .section h2 {
+      color: #A8C3BC;
+      border-bottom: 2px solid #A8C3BC;
+      padding-bottom: 0.5rem;
     }
     footer {
-      background-color: #222;
-      color: #fff;
+      background-color: #D4C5B1;
       text-align: center;
       padding: 1rem;
       position: fixed;
       width: 100%;
       bottom: 0;
     }
-    a {
-      color: #6b4e2f;
+    footer a {
+      color: #333;
+      text-decoration: none;
     }
-    a:hover {
+    footer a:hover {
       text-decoration: underline;
     }
   </style>
 </head>
 <body>
   <header>
-    <div class="header-left">
-      <img src="logo.png" alt="Logo IHP L'Appart" style="height: 70px; box-shadow: 2px 2px 8px rgba(0,0,0,0.3); border: 2px solid #ccc; border-radius: 4px;">
-    </div>
-    <div class="header-center">
-      <h1 style="margin: 0; text-shadow: 2px 2px 5px rgba(0,0,0,0.4);">IHP L'Appart</h1>
-      <p style="margin: 0; border: 2px solid #333; padding: 0.2rem 0.5rem; border-radius: 4px;">MONS</p>
-    </div>
-    <div class="header-right">
-      <a href="#actualites">Actualités</a>
-      <a href="#contact">Contact</a>
-      <a href="#liens-utiles">Liens utiles</a>
-    </div>
+    <h1>IHP L'Appart Mons</h1>
+    <p>Association à but non lucratif œuvrant dans le secteur de la santé mentale</p>
   </header>
 
   <nav>
     <a href="#presentation">Présentation</a>
     <a href="#services">Services</a>
-    <a href="#donnees-financieres">Données financières</a>
+    <a href="#actualites">Actualités</a>
     <a href="#contact">Contact</a>
+    <a href="#liens-utiles">Liens utiles</a>
   </nav>
 
   <div class="container">
-    <div id="presentation" class="section">
+    <section id="presentation" class="section">
       <h2>Présentation</h2>
       <p><strong>IHP L'Appart ASBL</strong> est une association à but non lucratif créée en 1993, située à Mons. Elle œuvre dans le secteur de la santé mentale en offrant un cadre résidentiel et un accompagnement psychosocial aux adultes avec troubles psychiatriques stabilisés.</p>
-    </div>
+    </section>
 
-    <div id="services" class="section">
+    <section id="services" class="section">
       <h2>Nos Services</h2>
       <ul>
         <li><strong>Atelier "La débrouille"</strong> : programme de réadaptation psychosociale pour internés libérés.</li>
         <li><strong>Service ambulatoire SPAD Médias</strong> : soins psychiatriques à domicile dans la région Mons-Borinage.</li>
       </ul>
-    </div>
+    </section>
 
-    <div id="donnees-financieres" class="section">
-      <h2>Données financières (2022)</h2>
+    <section id="actualites" class="section">
+      <h2>Actualités</h2>
+      <p>Restez informé des dernières nouveautés et événements à venir de l'association.</p>
       <ul>
-        <li>Chiffre d'affaires : 1 255 629 €</li>
-        <li>Bénéfice net : 133 414 €</li>
-        <li>Capitaux propres : 983 089 €</li>
+        <li><strong>Journée portes ouvertes</strong> : 15 juillet 2025 – Venez découvrir nos installations et rencontrer notre équipe.</li>
+        <li><strong>Atelier de bien-être</strong> : 22 août 2025 – Séance de relaxation et méditation ouverte à tous.</li>
       </ul>
-    </div>
+    </section>
 
-    <div id="contact" class="section">
+    <section id="contact" class="section">
       <h2>Contact</h2>
       <p><strong>Adresse :</strong> Boulevard Dolez 3, 7000 Mons</p>
       <p><strong>Téléphone :</strong> 0478/51 66 97</p>
       <p><strong>Email :</strong> <a href="mailto:tsi@ihpappart.be">tsi@ihpappart.be</a></p>
-    </div>
 
-    <div id="actualites" class="section">
-      <h2>Actualités</h2>
-      <p>Restez informé des dernières nouveautés et événements à venir de l'association.</p>
-    </div>
+      <h3>Formulaire de Contact</h3>
+      <form action="https://formspree.io/f/maykqvpl" method="POST">
+        <label for="name">Nom :</label>
+        <input type="text" id="name" name="name" required><br><br>
 
-    <div id="liens-utiles" class="section">
-      <h2>Liens utiles</h2>
-      <p>Retrouvez ici une sélection de ressources et partenaires recommandés.</p>
-    </div>
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="message">Message :</label><br>
+        <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+        <input type="submit" value="Envoyer">
+      </form>
+    </section>
+
+    <section id="liens-utiles" class="section">
+      <h2>Liens Utiles</h2>
+      <ul>
+        <li><a href="https://www.santementale.be" target="_blank">Santé Mentale Belgique</a></li>
+        <li><a href="https://www.cocom.be" target="_blank">COCOM</a></li>
+        <li><a href="https://www.psy.be" target="_blank">Psy.be</a></li>
+        <li><a href="https://www.mons.be" target="_blank">Ville de Mons</a></li>
+      </ul>
+    </section>
   </div>
 
   <footer>
-    &copy; 2025 IHP L'Appart Mons - Tous droits réservés
+    <p>&copy; 2025 IHP L'Appart Mons - Tous droits réservés</p>
   </footer>
 </body>
 </html>
